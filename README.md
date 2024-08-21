@@ -11,10 +11,10 @@ Course Staff
 ---
 *Instructor*: Charlie Roberts (@cdroberts)  
 *TA*: Akim Ndlovu (@andlovu)  
-*SA*: Kaley Du (@kdu)
-*SA*: 
+*SA*: Amanda Blanchard
+*SA*: Parker Frizzle
 
-Office Hours (tentative)
+Office Hours (work in progress)
 ---
 - Monday:
 - Tuesday: 3PM - 5PM w/ Charlie  
@@ -31,6 +31,8 @@ I will spend time on Discord answering questions asynchronously. Whenever possib
 - You want to tell me about your research
 - You'd like to sit and work a bit with me/other students nearby in case questions popup (space permitting)
 - Anything else, really!
+
+The TAs / SAs are available during their office hours for any course related content.
 
 Course Description
 ---
