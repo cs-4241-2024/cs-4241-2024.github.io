@@ -1,4 +1,4 @@
-*[Course Assignments & Due Dates](https://github.com/cs-4241-2023/cs-4241-2024.github.io/blob/main/cal.md)*
+*[Course Assignments & Due Dates](https://github.com/cs-4241-2024/cs-4241-2024.github.io/blob/main/calendar.md)*
 
 # Webware
 
