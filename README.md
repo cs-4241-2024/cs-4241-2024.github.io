@@ -11,16 +11,16 @@ Course Staff
 ---
 *Instructor*: Charlie Roberts (@cdroberts)  
 *TA*: Akim Ndlovu (@andlovu)  
-*SA*: Amanda Blanchard
-*SA*: Parker Frizzle (@pafrizzle)
+*SA*: Amanda Blanchard (@apblanchard)
+*SA*: Parker Frizzle  (@pafrizzle)
 
 Office Hours (work in progress)
 ---
-- Monday: 10AM - 12PM w/ Parker
-- Tuesday: 10AM - 11AM w/ Parker, 3PM - 5PM w/ Charlie  
-- Wednesday:
-- Thursday: 10AM - 12PM w/ Parker
-- Friday:
+- Monday: 8AM - 10AM w/Amanda, 10AM - 12PM w/ Parker
+- Tuesday: 8AM - 10AM w/Amanda, 10AM - 11PM w/Parker, 3PM - 5PM w/ Charlie  
+- Wednesday: 8AM - 10AM w/Amanda
+- Thursday: 8AM - 10AM w/Amanda, 10AM - 12PM w/ Parker
+- Friday: 
 
 I will spend time on Discord answering questions asynchronously. Whenever possible, please post questions *publicly* in Discord so everyone can learn from the answers... and there's a good chance someone else in the class might be able to help with technical questions as well. My in-person office hours are from 3--5 on Tuesday, in Fuller Labs B30... please stop by! Some good reasons to stop by in-person office hours include:
 
