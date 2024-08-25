@@ -14,7 +14,7 @@ Course Staff
 *SA*: Amanda Blanchard (@apblanchard)
 *SA*: Parker Frizzle  (@pafrizzle)
 
-Office Hours (work in progress)
+Office Hours
 ---
 
 - Monday: 8AM - 10AM w/Amanda, 10AM - 12PM w/ Parker, 3PM - 5PM w/ Akim
