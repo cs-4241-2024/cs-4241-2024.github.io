@@ -13,8 +13,8 @@ Readings:
 - [You Don't Know JS: Up & Going](https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/get-started/ch3.md), chapter 3 (due 09-5)
 - [The Box Model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model) (due 09-5)
 - [Web Design in 4 minutes](https://jgthms.com/web-design-in-4-minutes/)(due 09-05)
-- [Responsive Web Design with HTML5 and CSS](https://learning.oreilly.com/library/view/responsive-web-design/9781839211560/) chapters 4 and 6 (due 09-7) 
+- [Responsive Web Design with HTML5 and CSS](https://learning.oreilly.com/library/view/responsive-web-design/9781839211560/) chapters 4 and 6 (due 09-9) 
 
 Play:  
-- [Flexbox Froggy](https://flexboxfroggy.com/) (due 09-7)
-- [CSS Grid Garden](https://cssgridgarden.com/) (due 09-7)
+- [Flexbox Froggy](https://flexboxfroggy.com/) (due 09-9)
+- [CSS Grid Garden](https://cssgridgarden.com/) (due 09-9)
