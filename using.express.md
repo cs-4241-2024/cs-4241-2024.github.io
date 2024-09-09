@@ -10,7 +10,7 @@
     data.
   - We call our middleware function with the `use` function of our express app e.g. `app.use( someMiddleWare )`
 
-Below is a simple server-side logger of requested urls (adapted from express documentation). We can start by remixing a [express template project on glitch](https://webware-2023-express.glitch.me), and ignoring any HTML for now.
+Below is a simple server-side logger of requested urls (adapted from express documentation). We can start by remixing a [express template project on glitch](https://glitch.com/edit/#!/webware-express-tutorial-2024), and ignoring any HTML for now.
 
 ```js
 const express = require( 'express' ),
