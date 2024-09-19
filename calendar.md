@@ -28,9 +28,18 @@ Readings:
 - [Chapters 1–6 of the Non-Designer's Design Book](https://wpi.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma9936732229904746&context=L&vid=01WPI_INST:Default&lang=en&search_scope=MyInst_and_CI&adaptor=Local%20Search%20Engine&tab=Everything&query=any,contains,Robin%20Williams) (due 9-12)
 - [Using the Chrome debugger](https://developer.chrome.com/docs/devtools/javascript/) (due 9-12)
 - [Reframing Accessibility for the Web](https://alistapart.com/article/reframing-accessibility-for-the-web/) (due 9-16)
-- [JavaScript Promises in Sixteen Minutes](https://medium.com/quick-code/javascript-promises-in-twenty-minutes-3aac5b65b887) (due 9-16)  
-  
+- [JavaScript Promises in Sixteen Minutes](https://medium.com/quick-code/javascript-promises-in-twenty-minutes-3aac5b65b887) (due 9-16)
+
 Watch:  
 - [Aria, Accessibility APIs, and coding like you give a damn!](https://www.youtube.com/watch?v=qdB8SRhqvFc) (due 9-16)
 
- 
+*09-16*   
+Topics: Modules & Bundling, Components+Reactiviy, and Creative Coding  
+Development Assignment: Pick one between [A4 Creative Coding](https://github.com/cs-4241-2024/a4-creative-coding) and [A4 Components](https://github.com/cs-4241-2024/a4-components) (due 9/26) 
+
+Readings:  
+- [Modules, an Introduction](https://javascript.info/modules-intro) (due 9-23)
+
+Complete:  
+- [React Quick Start](https://react.dev/learn) (due 9-23)
+- [Svelte quick start](https://learn.svelte.dev/tutorial/welcome-to-svelte) (due 9-26)
