@@ -28,6 +28,10 @@ osc.frequency.value = 220
 // the audio context was first created, to get a relative time value
 // we can use the ctx.currentTime property
 
+// set value before we tell it to ramp, this is required
+// a time value of 0 effectively means "now"
+osc.frequency.setValueAtTime( 220, 0 )
+
 osc.frequency.linearRampToValueAtTime( 1760, audioCtx.currentTime + 30 )
 
 // to stop...
