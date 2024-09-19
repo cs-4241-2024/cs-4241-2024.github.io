@@ -105,7 +105,7 @@ biquad.connect( gainNode )
 gainNode.connect( audioCtx.destination )
 
 osc.start( 0 )
-biquad.frequency.value = 110
+biquad.frequency.setValueAtTime( 100,0 )
 biquad.frequency.linearRampToValueAtTime( 1760, audioCtx.currentTime + 2 )
 biquad.frequency.linearRampToValueAtTime( 110,  audioCtx.currentTime + 4 )
 // change the 'quality' of the filter, which emphasizes frequencies
@@ -138,7 +138,7 @@ biquad.Q.value = 20
 // except lets make a much longer, wider frequency sweep
 audioCtx = new AudioContext()
 osc  = audioCtx.createOscillator()
-osc.frequency.value = 80
+osc.frequency.setValueAtTime( 80, 0 )
 osc.frequency.linearRampToValueAtTime( 880 * 4, audioCtx.currentTime + 30 )
 osc.connect( audioCtx.destination )
 
@@ -151,6 +151,7 @@ console.log( analyser.frequencyBinCount ) // > 16
 
 // connect our sin oscillator to our analyser node
 osc.connect( analyser )
+osc.start(0)
 
 // create a typed JS array to hold analysis results
 const results = new Uint8Array( analyser.frequencyBinCount )
@@ -183,9 +184,9 @@ ctx = canvas.getContext( '2d' )
 audioCtx = new AudioContext()
 osc  = audioCtx.createOscillator()
 osc.type = 'square'
-osc.frequency.value = 80
+osc.frequency.setValueAtTime( 80, 0 )
 osc.frequency.linearRampToValueAtTime( 880 * 4, audioCtx.currentTime + 30 )
-osc.start()
+osc.start(0)
 osc.connect( audioCtx.destination )
 
 var analyser = audioCtx.createAnalyser()
