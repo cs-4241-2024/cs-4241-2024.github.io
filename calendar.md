@@ -35,7 +35,7 @@ Watch:
 
 *09-16*   
 Topics: Modules & Bundling, Components+Reactiviy, and Creative Coding  
-Development Assignment: Pick one between [A4 Creative Coding](https://github.com/cs-4241-2024/a4-creative-coding) and [A4 Components](https://github.com/cs-4241-2024/a4-components) (due 9/26) 
+Development Assignment: Pick one between [A4 Creative Coding](https://github.com/cs-4241-2024/a4-creative-coding) and [A4 Components](https://github.com/cs-4241-2024/a4-components) (due 9/30) 
 
 Readings:  
 - [Modules, an Introduction](https://javascript.info/modules-intro) (due 9-23)
