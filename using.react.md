@@ -1,9 +1,29 @@
+# Creating the project
+There are [lots of ways to start a React project](https://reactjs.org/docs/add-react-to-a-website.html). 
+Alternatively, you can create a basic React project (using Babel to compile and Webpack to bundle) by 
+following [these instructions at createapp.dev](https://createapp.dev/webpack). You can also use createapp.dev to generate Svelte apps, and add in additional 
+features and libraries like Bootstrap, Typescript etc. But we're going to use Vite in class. 
+Vite is a relatively new tooling system for frontend development, just being introduced
+in the past couple of yearas, but it's already [in use by 73% of web devs](https://2023.stateofjs.com/en-US/libraries/build_tools/). It tends to be faster
+than Webpack (another very popular front-end system), and configuration, when needed, also tends to be easier. 
+More specifically, there is a [project to combine Vite+Express](https://www.npmjs.com/package/vite-express) 
+that makes it easy to hook into all the development tools that the Vite server provides while still being able to use our regular Express routes. To create
+a new project using vite-express run:
+
+`npm create vite-express`
+
+...and this will setup a project template for you. Follow the instructions in your terminal to complete installation
+and start the server up. You should now be able to see a running demo app created with React.
+
 # Server
 The demo server for this example code has three routes to read, add, and update todos that are stored in memory. 
-Make sure this file is placecd and run in the top-level of your React project. For this project, we'll be using a
-the build system [Vite](https://vitejs.dev) to create handle transpiling our React code into HTML, it will also
-handle most of the static routes for us, so that we can solely focus on routes for manipulating our data on the
-server.
+Make sure this file is placecd and run in the top-level of your React project. In additon to building our files,
+Vite-Express will also handle most of the static routes for us, so that we can solely focus on routes for 
+manipulating our data on the server.
+
+By default, Vite-Express puts the express server in `src/server/main.js`. You can reconfigure this in the project
+`package.json` if you like, but it's probably simplest to keep their project configuration. Change `src/server/main.js`
+to the following:
 
 ```js
 import express from  'express'
@@ -34,20 +54,17 @@ app.post( '/change', function( req,res ) {
 ViteExpress.listen( app, 3000 )
 ```
 
-Make sure to install both `express` and `vite-express`!
+If you view your site now, you'll note the same React demo app is running as before. However, if you open
+up your dev console and run a fetch command:
+
+`fetch( '/read' ).then( res => res.json() ).then( console.log )`  
+
+...you'll see that the results are properly fetched from your Express route for `/read`. 
 
 # React
 
-## Setup
-There are [lots of ways to start a React project](https://reactjs.org/docs/add-react-to-a-website.html). 
-Alternatively, you can create a basic React project (using Babel to compile and Snowpack to bundle) by 
-following [these instructions at createapp.dev](https://createapp.dev/snowpack). You can also use createapp.dev to generate Svelte apps, and add in additional 
-features and libraries like Bootstrap, Typescript etc. We're going to use Vite in class. Vite is a relatively new tooling system for frontend development, just being introduced
-in the past couple of yearas, but it's already [in use by 50% of web devs](https://2022.stateofjs.com/en-US/libraries/build-tools/). It tends to be faster
-than Webpack (another very popular front-end system), and configuration, when needed also tends to be easier. Feel free to explore whatever front-end system you like!
-
 ## Quick test
-First, we require a basic file that loads our `App` component into a particular DOM element. Below is the `index.jsx` file given by createapp.dev; 
+First, we require a basic file that loads our `App` component into a particular DOM element. Below is the `index.jsx` file given by create-vite-express; 
 you shouldn't need to modify this file. Note that `.jsx` is a hybrid of JS / HTML and templating markup that *WILL NOT* run in the browser unless we compile
 it first. Vite will take care of that for us.
 
@@ -67,10 +84,10 @@ ReactDOM.createRoot( document.getElementById( 'root' ) ).render(
 
 In the example above we've imported the `App` *component*, which we can then instantiate. A component is an entity that (typically) has data (HTML),
 behavior (JavaScript), and styling (CSS) associated with it. In React the data and behavior for components go in a single file while CSS can be imported for styling. You'll note that
-create-vite has already given you a `App.jsx` file; we'll edit this in a bit but for now let's start our server, which in turn will start the Vite dev server and compile
+create-vite-express has already given you a `App.jsx` file; we'll edit this in a bit but for now let's start our server, which in turn will start the Vite dev server and compile
 our application.
 
-`node server.js`
+`npm run dev`
 
 If you visit [http://localhost:3000](http://127.0.0.1:3000), then you should see our React project running. Great!
 
@@ -172,8 +189,8 @@ OK, last but not least we add functions or updating our exising todos and adding
 ```
 
 ## Using function components
-Instead of using classes, (which was originally the only option in React for creating components) we can use functions. This makes especially easy to define small components as 3--5
-line arrow functions, instead of needing all the class syntax.
+Instead of using classes, (which was originally the only option in React for creating components) we can use functions. 
+This makes especially easy to define small components as 3--5 line arrow functions, instead of needing all the class syntax.
 
 ```jsx
 import React, { useState, useEffect } from 'react'
