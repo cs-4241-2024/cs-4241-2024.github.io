@@ -196,6 +196,6 @@ Once your project is working, you'll need to complete a few extra steps to get i
 
 1. Run `npx vite build` from within the `client` directory. This will create a folder named `dist` containing your `index.html` page and all your compiled Svelte widgets.
 2. Uncomment the line to use `express.static` in the server and make sure it points to the right folder that you compiled in step 1. The easiest solution here is probably to just place the `dist` folder in the same location as your server file.
-3. If you just run the express server now, the project should still work without needing the Svelte dev server to run. However, if you transfer it to a server (glitch, heroku etc.) the routes will fail because they're pointing at `localhost`. You've got a few options to fix this:
-  a. Go into the javascript that Svelte compiled for you (in `/dist/assets`) and do a quick find and replace to remove 'http://localhost:3000'.
-  b. Replace the hostname of any URLs in fetch commands with `http://${window.location.host}/get`, replacing 'get' with the route. This will automatically use the correct rul for all routes. You'll then need to recompile the Svelte project and recopy the build folder into your server directory.
+3. If you just run the express server now, the project should still work without needing the Svelte dev server to run. However, if you transfer it to a server (glitch, heroku etc.) the routes will fail because they're pointing at `localhost`. You've got a couple of options to fix this:  
+    - Go into the javascript that Svelte compiled for you (in `/dist/assets`) and do a quick find and replace to remove 'http://localhost:3000'.
+    - Replace the hostname of any URLs in fetch commands with `http://${window.location.host}/get`, replacing 'get' with the route. This will automatically use the correct rul for all routes. You'll then need to recompile the Svelte project and recopy the build folder into your server directory.
