@@ -85,24 +85,44 @@ In the above code, we read through all the files with `.txt` in it, get the text
 4. In our `pages` directory, create a new file called `blog.js` and change it to the follwing:
 
 ```js
+import Head from "next/head";
+import Image from "next/image";
+import localFont from "next/font/local";
+import styles from "@/styles/Home.module.css";
+import Link from "next/link"
+import Nav from "./nav"
 import { getPosts } from '../lib/posts'
-import Nav from './nav.js'
+
+const geistSans = localFont({
+  src: "./fonts/GeistVF.woff",
+  variable: "--font-geist-sans",
+  weight: "100 900",
+});
+const geistMono = localFont({
+  src: "./fonts/GeistMonoVF.woff",
+  variable: "--font-geist-mono",
+  weight: "100 900",
+});
 
 export function getStaticProps() {
   const posts = getPosts()
   return { props: { posts } }
 }
 
-export default function Home({ posts })  {
+export default function Home({ posts }) {
   return (
     <>
-      <h1>Blog</h1>
-      <Nav />
-      {
-        posts.map( post => (<h3 key={post.id}>{post.text}</h3>) )
-      }
+      <div className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}>
+        <main className={styles.main}>
+          <h1>BLOG</h1>
+          <Nav />
+          {
+            posts.map( post => (<h3 key={post.id}>{post.text}</h3>) )
+          }
+        </main>
+      </div>
     </>
-  )
+  );
 }
 ```
 
