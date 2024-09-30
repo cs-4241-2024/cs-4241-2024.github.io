@@ -58,7 +58,7 @@ socketServer.on( 'connection', client => {
 
 server.listen( 3000 )
 
-ViteExpress.bind( app, server )
+ViteExpress.bind( app, socketServer )
 ```
 
 ## Svelte Client
